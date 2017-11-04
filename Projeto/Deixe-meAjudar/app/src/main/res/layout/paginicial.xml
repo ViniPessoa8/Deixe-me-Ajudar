@@ -38,24 +38,23 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnCadastro"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="220px"
             android:backgroundTint="#66006400"
-            android:textColor="#FFFFFF"
             android:fontFamily="casual"
             android:text="Cadastro"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnEntrar"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10px"
-            android:="visible"
             android:backgroundTint="#66006400"
             android:fontFamily="casual"
             android:text="Entrar"
