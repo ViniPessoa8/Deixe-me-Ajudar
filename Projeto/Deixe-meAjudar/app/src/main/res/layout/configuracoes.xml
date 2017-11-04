@@ -33,7 +33,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30px"
+                android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:text="Configurações"
                 android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
@@ -51,7 +51,7 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/btnAlterarSenha3"
+            android:id="@+id/btnAlterarEmail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60px"
@@ -60,7 +60,7 @@
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/btnAlterarSenha2"
+            android:id="@+id/btnDesativarConta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="60px"
