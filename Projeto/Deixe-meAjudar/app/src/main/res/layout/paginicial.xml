@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="150px"
-            android:text="Bem vindo e fodase."
+            android:text="Bem vindo!"
             android:textAlignment="center"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             android:textColor="#FFFFFF" />
@@ -32,7 +32,7 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Deixe-me ajudar, seu merda."
+            android:text="Deixe-me ajudar, qual o problema?"
             android:textAlignment="center"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             android:textColor="#FFFFFF" />
