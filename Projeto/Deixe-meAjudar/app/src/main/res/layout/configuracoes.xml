@@ -68,5 +68,25 @@
             android:text="Desativar Conta"
             android:textColor="#FFFFFF" />
 
+        <FrameLayout
+            android:id="@+id/btnVoltar"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="10px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/homeAsUpIndicator" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/btnsetafundo_orange" />
+        </FrameLayout>
+
     </LinearLayout>
 </FrameLayout>
