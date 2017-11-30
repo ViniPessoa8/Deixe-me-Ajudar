@@ -4,72 +4,52 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import com.example.vinicius.login_cadastro_deixe_me_ajudar.R;
 
 /**
- * Created by Vinicius on 29/11/2017.
+ * Created by vinicius on 30/11/17.
  */
 
-public class Activity_admin_pagina_principal extends AppCompatActivity {
+public class Activity_admin_motivacao extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_main);
         resetTelas();
-        findViewById(R.id.includeadminprincipal).setVisibility(View.VISIBLE);
+        findViewById(R.id.includeadminmotivacao).setVisibility(View.VISIBLE);
 
-        ImageView btnMotivacao = findViewById(R.id.btnMotivacaoAdmin);
-        ImageView btnConfig= findViewById(R.id.btnMotivacaoAdmin);
-        ImageView btnExercicios = findViewById(R.id.btnExerciciosAdmin);
-        ImageView btnPertoDeVoce = findViewById(R.id.btnPertoDeVoceAdmin);
-        ImageView btnInformacoes = findViewById(R.id.btnInformacoesAdmin);
-        ImageButton btnVoltar = findViewById(R.id.btnVoltarInicioAdmin);
+        Button btnAdicionar = findViewById(R.id.btnAdicionarAdminMotivacao);
+        Button btnBuscar = findViewById(R.id.btnAdicionarAdminMotivacao);
+        Button btnExcluir = findViewById(R.id.btnExcluirAdminMotivacao);
+        ImageButton btnVoltar = findViewById(R.id.btnVoltarAdminMotivacao);
 
-        btnMotivacao.setOnClickListener(new View.OnClickListener() {
+        btnAdicionar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 resetTelas();
-                Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_motivacao.class);
+                Intent intent = new Intent(Activity_admin_motivacao.this, Activity_admin_pagina_principal.class);
                 startActivity(intent);
             }
         });
 
-        btnConfig.setOnClickListener(new View.OnClickListener() {
+        btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 resetTelas();
-                Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_config.class);
+                Intent intent = new Intent(Activity_admin_motivacao.this, Activity_admin_pagina_principal.class);
                 startActivity(intent);
             }
         });
 
-        btnExercicios.setOnClickListener(new View.OnClickListener() {
+        btnExcluir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 resetTelas();
-                Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_exercicios.class);
-                startActivity(intent);
-            }
-        });
-
-        btnPertoDeVoce.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                resetTelas();
-                Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_perto_de_voce.class);
-                startActivity(intent);
-            }
-        });
-
-        btnInformacoes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                resetTelas();
-                Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_informacoes.class);
+                Intent intent = new Intent(Activity_admin_motivacao.this, Activity_admin_pagina_principal.class);
                 startActivity(intent);
             }
         });
@@ -78,7 +58,7 @@ public class Activity_admin_pagina_principal extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 resetTelas();
-                Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_inicio_pagina_inicial.class);
+                Intent intent = new Intent(Activity_admin_motivacao.this, Activity_admin_pagina_principal.class);
                 startActivity(intent);
             }
         });

@@ -8,17 +8,16 @@
     <LinearLayout
         android:id="@+id/layoutPrincipal"
         android:layout_width="match_parent"
-        android:layout_height="440dp"
+        android:layout_height="420dp"
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
         android:weightSum="1">
 
         <LinearLayout
             android:id="@+id/layoutTitulo"
-            android:layout_width="wrap_content"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="25dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -40,14 +39,16 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnAdicionarImagem"
-            android:layout_width="164dp"
-            android:layout_height="64dp"
+            android:id="@+id/btAdicionar"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_margin="15sp"
+            android:layout_weight="0.09"
             android:backgroundTint="#8C336600"
             android:fontFamily="casual"
-            android:text="Adicionar imagem"
-            android:textColor="#FFFFFF" />
+            android:text="Selecionar imagem"
+            android:textColor="@android:color/white" />
 
         <ImageButton
             android:id="@+id/btVoltar"
