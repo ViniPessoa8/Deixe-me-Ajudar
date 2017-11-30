@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_configuracoes">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="447dp"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/layoutTitulo"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/icone_configuracoes" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="Configurações"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btAlterarEmail"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15sp"
+            android:layout_weight="0.09"
+            android:backgroundTint="#96ff9966"
+            android:fontFamily="casual"
+            android:text="Alterar email "
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btAlterarSenha"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15sp"
+            android:backgroundTint="#96ff9966"
+            android:fontFamily="casual"
+            android:text="Alterar Senha"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btExcluirConta"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15sp"
+            android:backgroundTint="#96ff9966"
+            android:fontFamily="casual"
+            android:text="Excluir conta"
+            android:textColor="@android:color/white" />
+
+        <ImageButton
+            android:id="@+id/btVoltar"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#96ff9966"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+    </LinearLayout>
+</FrameLayout>

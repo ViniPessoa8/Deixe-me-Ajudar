@@ -1,0 +1,27 @@
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/includeadminprincipal"
+        layout="@layout/admin_principal"
+        android:visibility="visible"/>
+    <include
+        android:id="@+id/includeadminadicionarconteudo"
+        layout="@layout/admin_adicionar_conteudo"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminexercicios"
+        layout="@layout/admin_exercicios"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadmininformacoes"
+        layout="@layout/admin_informacoes"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminmotivacao"
+        layout="@layout/admin_motivacao"
+        android:visibility="invisible"/>
+
+</android.support.constraint.ConstraintLayout>

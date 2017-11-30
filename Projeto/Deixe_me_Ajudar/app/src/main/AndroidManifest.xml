@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vinicius.login_cadastro_deixe_me_ajudar">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.ActivityInicio" />
+        <activity android:name=".activities.ActivityUser" />
+        <activity android:name=".activities.ActivityAdmin" />
+        <activity android:name=".activities.Activity_user_config_alterar_email" />
+        <activity android:name=".activities.Activity_user_pagina_principal" />
+        <activity android:name=".activities.Activity_user_motivacao" />
+        <activity android:name=".activities.Activity_user_informacoes" />
+        <activity android:name=".activities.Activity_user_exercicios" />
+        <activity android:name=".activities.Activity_user_config_excluir_conta" />
+        <activity android:name=".activities.Activity_user_relatorio" />
+        <activity android:name=".activities.Activity_user_relatorio_gerar" />
+        <activity android:name=".activities.Activity_user_config" />
+        <activity android:name=".activities.Activity_user_config_alterar_senha" />
+        <activity android:name=".activities.Activity_inicio_pagina_inicial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.Activity_inicio_cadastro" />
+        <activity android:name=".activities.Activity_inicio_login" />
+        <activity android:name=".activities.Activity_user_buscar_conteudo" />
+    </application>
+
+</manifest>

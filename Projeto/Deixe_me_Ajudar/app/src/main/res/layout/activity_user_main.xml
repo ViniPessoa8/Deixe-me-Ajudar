@@ -1,0 +1,55 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/includeuserprincipal"
+        layout="@layout/user_principal"
+        android:visibility="visible"/>
+    <include
+        android:id="@+id/includeusermotivacao"
+        layout="@layout/user_motivacao"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuserrelatorio"
+        layout="@layout/user_relatorio"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuserpertodevoce"
+        layout="@layout/user_perto_de_voce"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuserconfig"
+        layout="@layout/configuracoes"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuserexercicios"
+        layout="@layout/user_exercicios"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuserinformacoes"
+        layout="@layout/user_informacoes"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuseralteraremail"
+        layout="@layout/configuracoes_alterar_email"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuseralterarsenha"
+        layout="@layout/configuracoes_alterar_senha"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuserexcluirconta"
+        layout="@layout/user_excluir_conta"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuserrelatoriogerar"
+        layout="@layout/user_relatorio_gerar"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeuserbuscarconteudo"
+        layout="@layout/user_buscar_conteudo"
+        android:visibility="invisible"/>
+
+
+</android.support.constraint.ConstraintLayout>
