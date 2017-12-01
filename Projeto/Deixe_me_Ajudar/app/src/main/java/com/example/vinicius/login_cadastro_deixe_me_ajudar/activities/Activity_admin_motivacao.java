@@ -23,7 +23,7 @@ public class Activity_admin_motivacao extends AppCompatActivity {
         findViewById(R.id.includeadminmotivacao).setVisibility(View.VISIBLE);
 
         Button btnAdicionar = findViewById(R.id.btnAdicionarAdminMotivacao);
-        Button btnBuscar = findViewById(R.id.btnAdicionarAdminMotivacao);
+        Button btnBuscar = findViewById(R.id.btnBuscarAdminMotivacao);
         Button btnExcluir = findViewById(R.id.btnExcluirAdminMotivacao);
         ImageButton btnVoltar = findViewById(R.id.btnVoltarAdminMotivacao);
 

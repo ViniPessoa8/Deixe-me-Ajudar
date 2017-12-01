@@ -35,6 +35,8 @@
         <activity android:name=".activities.Activity_admin_perto_de_voce" />
         <activity android:name=".activities.Activity_admin_pagina_principal" />
         <activity android:name=".activities.Activity_admin_motivacao" />
+        <activity android:name=".activities.Activity_admin_exercicios" />
+        <activity android:name=".activities.Activity_admin_informacoes" />
     </application>
 
 </manifest>
