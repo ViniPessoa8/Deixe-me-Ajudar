@@ -15,12 +15,18 @@ import com.example.vinicius.login_cadastro_deixe_me_ajudar.R;
 
 public class Activity_admin_pagina_principal extends AppCompatActivity {
 
+    String adminEmail;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_main);
         resetTelas();
         findViewById(R.id.includeadminprincipal).setVisibility(View.VISIBLE);
+
+        //Email passado como parâmetro da activity
+        Intent intent = getIntent();
+        adminEmail = intent.getStringExtra("adminEMail");
 
         ImageView btnMotivacao = findViewById(R.id.btnMotivacaoAdmin);
         ImageView btnConfig= findViewById(R.id.btnMotivacaoAdmin);
@@ -34,6 +40,7 @@ public class Activity_admin_pagina_principal extends AppCompatActivity {
             public void onClick(View view) {
                 resetTelas();
                 Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_motivacao.class);
+                intent.putExtra("adminEmail", adminEmail);
                 startActivity(intent);
             }
         });
@@ -43,6 +50,7 @@ public class Activity_admin_pagina_principal extends AppCompatActivity {
             public void onClick(View view) {
                 resetTelas();
                 Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_config.class);
+                intent.putExtra("adminEmail", adminEmail);
                 startActivity(intent);
             }
         });
@@ -52,6 +60,7 @@ public class Activity_admin_pagina_principal extends AppCompatActivity {
             public void onClick(View view) {
                 resetTelas();
                 Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_exercicios.class);
+                intent.putExtra("adminEmail", adminEmail);
                 startActivity(intent);
             }
         });
@@ -61,6 +70,7 @@ public class Activity_admin_pagina_principal extends AppCompatActivity {
             public void onClick(View view) {
                 resetTelas();
                 Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_perto_de_voce.class);
+                intent.putExtra("adminEmail", adminEmail);
                 startActivity(intent);
             }
         });
@@ -70,6 +80,7 @@ public class Activity_admin_pagina_principal extends AppCompatActivity {
             public void onClick(View view) {
                 resetTelas();
                 Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_admin_informacoes.class);
+                intent.putExtra("adminEmail", adminEmail);
                 startActivity(intent);
             }
         });
@@ -79,6 +90,7 @@ public class Activity_admin_pagina_principal extends AppCompatActivity {
             public void onClick(View view) {
                 resetTelas();
                 Intent intent = new Intent(Activity_admin_pagina_principal.this, Activity_inicio_pagina_inicial.class);
+                intent.putExtra("adminEmail", adminEmail);
                 startActivity(intent);
             }
         });

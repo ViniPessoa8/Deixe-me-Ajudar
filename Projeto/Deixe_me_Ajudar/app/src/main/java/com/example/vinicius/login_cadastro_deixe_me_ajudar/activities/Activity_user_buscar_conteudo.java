@@ -24,6 +24,10 @@ public class Activity_user_buscar_conteudo extends AppCompatActivity {
         resetTelas();
         findViewById(R.id.includeuserbuscarconteudo).setVisibility(View.VISIBLE);
 
+        //Email passado como parâmetro da activity
+        Intent intent = getIntent();
+        emailUser = intent.getStringExtra("emailUser");
+
         ImageButton btnVoltar = findViewById(R.id.btVoltarBuscaUser);
         ImageView btnBuscar = findViewById(R.id.btnBuscarConteudoUser);
 
@@ -39,6 +43,7 @@ public class Activity_user_buscar_conteudo extends AppCompatActivity {
             public void onClick(View view) {
                 resetTelas();
                 Intent intent = new Intent(Activity_user_buscar_conteudo.this, Activity_user_pagina_principal.class);
+                intent.putExtra("emailUser", emailUser);
                 startActivity(intent);
             }
         });
