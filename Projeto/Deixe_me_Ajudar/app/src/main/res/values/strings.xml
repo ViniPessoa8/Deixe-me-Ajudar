@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Deixe-me Ajudar</string>
+
+    <string-array name="spinner_exercicios">
+        <item>Tipo</item>
+        <item>Meditações</item>
+        <item>Vídeos</item>
+        <item>Imagens</item>
+    </string-array>
 </resources>

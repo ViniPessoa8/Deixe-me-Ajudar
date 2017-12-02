@@ -33,9 +33,8 @@ public class Activity_inicio_login extends AppCompatActivity {
         btVoltarInicioLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                findViewById(R.id.includelogin).setVisibility(View.INVISIBLE);
-                findViewById(R.id.includecadastro).setVisibility(View.INVISIBLE);
-                findViewById(R.id.includeinicio).setVisibility(View.VISIBLE);
+                Intent intent = new Intent(Activity_inicio_login.this, Activity_inicio_pagina_inicial.class);
+                startActivity(intent);
             }
         });
 
@@ -53,13 +52,14 @@ public class Activity_inicio_login extends AppCompatActivity {
                     if(email.equals("admin") && senha.equals("admin")){
                         Toast.makeText(Activity_inicio_login.this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();
                         intent = new Intent(Activity_inicio_login.this, Activity_admin_pagina_principal.class);
-
+                        intent.putExtra("emailUser", email);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(Activity_inicio_login.this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();
+                        intent = new Intent(Activity_inicio_login.this, Activity_user_pagina_principal.class);
+                        intent.putExtra("emailUser", email);
                         startActivity(intent);
                     }
-                    Toast.makeText(Activity_inicio_login.this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();
-                    intent = new Intent(Activity_inicio_login.this, Activity_user_pagina_principal.class);
-
-                    startActivity(intent);
                 } else {
                     Toast.makeText(Activity_inicio_login.this, "Erro no login, verifique os dados.", Toast.LENGTH_SHORT).show();
                 }

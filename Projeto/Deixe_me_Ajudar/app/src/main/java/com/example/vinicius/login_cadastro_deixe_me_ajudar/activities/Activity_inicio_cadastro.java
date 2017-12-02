@@ -33,9 +33,8 @@ public class Activity_inicio_cadastro extends AppCompatActivity {
         btVoltarInicioCadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                findViewById(R.id.includelogin).setVisibility(View.INVISIBLE);
-                findViewById(R.id.includecadastro).setVisibility(View.INVISIBLE);
-                findViewById(R.id.includeinicio).setVisibility(View.VISIBLE);
+                Intent intent = new Intent(Activity_inicio_cadastro.this, Activity_inicio_pagina_inicial.class);
+                startActivity(intent);
             }
         });
 

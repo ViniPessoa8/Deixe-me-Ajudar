@@ -16,12 +16,31 @@
         layout="@layout/admin_exercicios"
         android:visibility="invisible"/>
     <include
-        android:id="@+id/includeadmininformacoes"
-        layout="@layout/admin_informacoes"
+        android:id="@+id/includeadmininformacao"
+        layout="@layout/admin_informacao"
         android:visibility="invisible"/>
     <include
         android:id="@+id/includeadminmotivacao"
         layout="@layout/admin_motivacao"
         android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminmotivacaoadicionar"
+        layout="@layout/admin_motivacao_adicionar"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadmininformacaoadicionar"
+        layout="@layout/admin_informacao_adicionar"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminexercicioadicionar"
+        layout="@layout/admin_exercicio_adicionar"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadmininformacaobuscar"
+        layout="@layout/admin_informacao_buscar"
+        android:visibility="invisible"/>
+
+
+    includeadminexerciciosadicionar
 
 </android.support.constraint.ConstraintLayout>

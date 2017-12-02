@@ -9,9 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.ActivityInicio" />
-        <activity android:name=".activities.ActivityUser" />
-        <activity android:name=".activities.ActivityAdmin" />
         <activity android:name=".activities.Activity_user_config_alterar_email" />
         <activity android:name=".activities.Activity_user_pagina_principal" />
         <activity android:name=".activities.Activity_user_motivacao" />
@@ -32,6 +29,14 @@
         <activity android:name=".activities.Activity_inicio_cadastro" />
         <activity android:name=".activities.Activity_inicio_login" />
         <activity android:name=".activities.Activity_user_buscar_conteudo" />
+        <activity android:name=".activities.Activity_admin_informacao_buscar" />
+        <activity android:name=".activities.Activity_admin_informacao_adicionar" />
+        <activity android:name=".activities.Activity_admin_informacao" />
+        <activity android:name=".activities.Activity_admin_exercicio_adicionar" />
+        <activity android:name=".activities.Activity_admin_motivacao_adicionar" />
+        <activity android:name=".activities.Activity_admin_pagina_principal" />
+        <activity android:name=".activities.Activity_admin_motivacao" />
+        <activity android:name=".activities.Activity_admin_exercicio" />
     </application>
 
 </manifest>
