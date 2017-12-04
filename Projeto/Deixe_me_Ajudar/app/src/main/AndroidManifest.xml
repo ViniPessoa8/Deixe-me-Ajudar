@@ -32,6 +32,11 @@
         <activity android:name=".activities.Activity_inicio_cadastro" />
         <activity android:name=".activities.Activity_inicio_login" />
         <activity android:name=".activities.Activity_user_buscar_conteudo" />
+        <activity android:name=".activities.Activity_admin_perto_de_voce" />
+        <activity android:name=".activities.Activity_admin_pagina_principal" />
+        <activity android:name=".activities.Activity_admin_motivacao" />
+        <activity android:name=".activities.Activity_admin_exercicios" />
+        <activity android:name=".activities.Activity_admin_informacoes" />
     </application>
 
 </manifest>

@@ -53,7 +53,7 @@ public class Activity_inicio_login extends AppCompatActivity {
                     if(email.equals("admin") && senha.equals("admin")){
                         Toast.makeText(Activity_inicio_login.this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();
                         intent = new Intent(Activity_inicio_login.this, Activity_admin_pagina_principal.class);
-
+                        intent.putExtra("adminEmail", email);
                         startActivity(intent);
                     }
                     Toast.makeText(Activity_inicio_login.this, "Login efetuado com sucesso!", Toast.LENGTH_SHORT).show();

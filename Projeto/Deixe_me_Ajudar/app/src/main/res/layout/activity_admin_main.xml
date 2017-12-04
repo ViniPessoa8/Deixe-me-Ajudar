@@ -8,10 +8,6 @@
         layout="@layout/admin_principal"
         android:visibility="visible"/>
     <include
-        android:id="@+id/includeadminadicionarconteudo"
-        layout="@layout/admin_adicionar_conteudo"
-        android:visibility="invisible"/>
-    <include
         android:id="@+id/includeadminexercicios"
         layout="@layout/admin_exercicios"
         android:visibility="invisible"/>
@@ -22,6 +18,46 @@
     <include
         android:id="@+id/includeadminmotivacao"
         layout="@layout/admin_motivacao"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminadicionarinformacao"
+        layout="@layout/admin_adicionar_informacao"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminadicionarmotivacao"
+        layout="@layout/admin_adicionar_motivacao"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminadicionarexercicio"
+        layout="@layout/admin_adicionar_exercicio"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminbuscarexercicio"
+        layout="@layout/admin_buscar_exercicio"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminbuscarinformacao"
+        layout="@layout/admin_buscar_informacao"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminpertodevoce"
+        layout="@layout/admin_perto_de_voce"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadmin"
+        layout="@layout/admin_buscar_motivacao"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadmin"
+        layout="@layout/admin_buscar_motivacao"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadmin"
+        layout="@layout/admin_buscar_motivacao"
+        android:visibility="invisible"/>
+    <include
+        android:id="@+id/includeadminbuscarmotivacao"
+        layout="@layout/admin_buscar_motivacao"
         android:visibility="invisible"/>
 
 </android.support.constraint.ConstraintLayout>

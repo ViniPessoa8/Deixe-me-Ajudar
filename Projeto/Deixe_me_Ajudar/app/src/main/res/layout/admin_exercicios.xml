@@ -40,7 +40,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btAdicionar"
+            android:id="@+id/btnAdicionarAdminExercicios"
             android:layout_width="155dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -52,7 +52,7 @@
             android:textColor="@android:color/white" />
 
         <Button
-            android:id="@+id/btBuscar"
+            android:id="@+id/btnBuscarAdminExercicios"
             android:layout_width="155dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -63,7 +63,7 @@
             android:textColor="@android:color/white" />
 
         <Button
-            android:id="@+id/btExcluir"
+            android:id="@+id/btnExcluirAdminExercicios"
             android:layout_width="155dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -74,7 +74,7 @@
             android:textColor="@android:color/white" />
 
         <ImageButton
-            android:id="@+id/btVoltar"
+            android:id="@+id/btnVoltarAdminExercicios"
             android:layout_width="60dp"
             android:layout_height="50dp"
             android:backgroundTint="#BF0099cc"
