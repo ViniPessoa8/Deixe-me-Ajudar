@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_admin_informacoes"
+    tools:context="com.example.user.testezin.ListaItemActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/fundo_cinza"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtBusca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Pesquisar"
+                android:inputType="textPersonName" />
+
+            <ImageButton
+                android:id="@+id/btBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:layout_weight="1"
+                app:srcCompat="?android:attr/actionModeWebSearchDrawable" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_margin="15dp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnVoltar"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#CCff9933"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+</FrameLayout>

@@ -60,7 +60,7 @@
                 android:layout_height="104dp"
                 android:layout_gravity="center_horizontal"
                 android:fontFamily="serif"
-                android:text="     Você tem certeza que deseja desativar sua conta ?"
+                android:text="     Você tem certeza que deseja excluir sua conta ?"
                 android:textAlignment="textStart"
                 android:textColor="#000000"
                 android:textSize="26sp" />
@@ -75,17 +75,17 @@
             android:weightSum="1">
 
             <Button
-                android:id="@+id/btnDesativar"
+                android:id="@+id/btnExcluir"
                 android:layout_width="136dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:background="#96ff9966"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                android:layout_margin="15sp"
                 android:layout_gravity="center_horizontal"
-                android:text="Desativar"
-                android:layout_weight="0.25" />
+                android:layout_margin="15sp"
+                android:layout_weight="0.25"
+                android:background="#96ff9966"
+                android:fontFamily="casual"
+                android:text="Excluir"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
 
             <ImageButton
                 android:id="@+id/btVoltar"

@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Deixe-me Ajudar</string>
+    <string name="app_name">testezin</string>
+
+    <string-array name="spinner_exercicios">
+        <item>Tipo</item>
+        <item>Meditações</item>
+        <item>Vídeos</item>
+        <item>Imagens</item>
+    </string-array>
+
+    <string name="nomeUser">Bem-vindo, !</string>
+
 </resources>

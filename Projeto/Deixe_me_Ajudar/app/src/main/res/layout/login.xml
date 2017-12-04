@@ -72,17 +72,6 @@
                 android:inputType="textPassword"
                 android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/btRecuperarSenha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8sp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="Esqueceu sua senha ?"
-                android:textAllCaps="true"
-                android:textColor="@android:color/holo_blue_dark"
-                android:textSize="18sp" />
-
         </LinearLayout>
 
         <Button
