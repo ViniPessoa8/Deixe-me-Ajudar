@@ -10,7 +10,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DbHelper extends SQLiteOpenHelper{
     private static final String DATABASE_NAME = "DeixeMeAjudar.db";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;
     private final String CREATE_TABLE1 = "CREATE TABLE Usuario(id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT NOT NULL, email TEXT NOT NULL, senha TEXT NOT NULL, admin boolean NOT NULL);";
     private final String CREATE_TABLE2 = "CREATE TABLE Relatorio(id INTEGER PRIMARY KEY AUTOINCREMENT, conteudo TEXT not null, intensidade int(10) not null, idUser INTEGER not null, FOREIGN KEY (idUser) REFERENCES Usuario(id));";
     private final String CREATE_TABLE3 = "CREATE TABLE Conteudo(id INTEGER PRIMARY KEY AUTOINCREMENT, anexo BLOB, titulo varchar (450) not null, Conteudo longtext, tipo int not null, idAdmin INTEGER NOT NULL, FOREIGN KEY(idAdmin) REFERENCES Usuario(id));";
@@ -37,6 +37,12 @@ public class DbHelper extends SQLiteOpenHelper{
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE IF EXISTS Usuario");
+        db.execSQL("DROP TABLE IF EXISTS Relatorio");
+        db.execSQL("DROP TABLE IF EXISTS Conteudo");
+        db.execSQL("DROP TABLE IF EXISTS Inspiracao");
+        db.execSQL("DROP TABLE IF EXISTS Informacao");
+        db.execSQL("DROP TABLE IF EXISTS Exercicios");
+        db.execSQL("DROP TABLE IF EXISTS PertoDeVoce");
         onCreate(db);
     }
 }
